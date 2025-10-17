@@ -1,0 +1,75 @@
+:root{
+    --purpura: #800080;
+    --purpura2: #871F78;
+    --purpura2: #871F78;
+    --cinzaBackground: rgba(211,211,211, 0.4);
+}
+
+*{
+    margin: 0%;
+    padding: 0%;
+    border: 0%;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    background-image: url('assets/background.png');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    margin-top: 5px;
+    padding: 2px;
+}
+
+.register {
+    width:700px ;
+    background-color: var(--cinzaBackground);
+    padding: 3vh;
+    text-align: center;
+    border-radius: 15px;
+    color: white;
+    text-shadow: 2px 4px 5px rgba(0,0,0,0.7);
+}
+
+label{
+    font-weight: bold;
+    font-size: 14px;
+    margin: 5px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: yellow;
+}
+
+input[type="text"], input[type="email"],input[type="date"],input[type="tel"],select[id="nivelEscolaridade"]{
+    border: none;
+    outline: none;
+    width:95%;
+    height: 30px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+button{
+    display: block;
+    margin-top: 10px;
+    width: 100%;
+    padding: 8px;
+    border: none;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(90deg,rgba(159, 79, 163, 1) 0%, rgba(103, 86, 190, 1) 50%, rgba(44, 38, 93, 1) 100%);
+    border-radius: 25px;
+}
+
+button:hover{
+    background: var(--cinzaBackground);
+    color: var(--purpura)
+}

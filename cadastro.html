@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css">
+    <title>Cadastro Formulário</title>
+</head>
+<body>
+    <main>
+        <div class="register">
+            <h1>Cadastro de Aluno</h1>
+            <form action="" id="formCadastro">
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" id="nome">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email">
+                <label for="dataNasc">Data de Nascimento</label>
+                <input type="date" name="dataNasc" id="dataNasc">
+                <label for="telefone">Telefone</label>
+                <input type="tel" name="telefone" id="telefone" minlength="9" maxlength="15" placeholder="99999-9999">
+                <label for="nivelEscolaridade">Nível de Escolaridade</label>
+                <select name="nivelEscolaridade" id="nivelEscolaridade">
+                    <option value="ensMedIncomp">Ensino Médio Incompleto</option>
+                    <option value="ensMedComp">Ensino Médio Completo</option>
+                    <option value="gradIncomp">Graduação Incompleto</option>
+                    <option value="gradComp">Graduação Completo</option>
+                    <option value="posGrad">Pós-Graduação</option>
+                    <option value="mestrado">Mestrado</option>
+                </select>
+                <label for="genero">Definir o gênero</label>
+                <input type="radio" name="genero" id="masculino" value="masculino">Masculino
+                <input type="radio" name="genero" id="feminino" value="feminino">Feminino
+                <label for="tecnologias">Linguagens de Programação</label>
+                <input class="tecnologiasCheck" type="checkbox" name="tecnologias" id="python" value="python"> Python
+                <input class="tecnologiasCheck" type="checkbox" name="tecnologias" id="javaScript" value="javaScript"> JavaScript
+                <input class="tecnologiasCheck" type="checkbox" name="tecnologias" id="cSharp" value="cSharp"> C#
+                <input class="tecnologiasCheck" type="checkbox" name="tecnologias" id="java" value="java"> Java
+                <input class="tecnologiasCheck" type="checkbox" name="tecnologias" id="php" value="php"> PHP
+                <input class="tecnologiasCheck" type="checkbox" name="tecnologias" id="dataBase" value="dataBase"> Banco de Dados
+                <button type="submit" id="btnCadastro" onclick="cadastroInfo(event)">Cadastrar</button>
+            </form>
+        </div>
+        <script src="main.js"></script>
+    </main>
+</body>
+</html>

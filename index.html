@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Formulário</title>
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <h1>Formulário de Cadastro</h1>
+            <form action="">
+                <h2>Realizar Login</h2>
+                <label for="userName">Usuário</label>
+                <input type="text" id="userName">
+                <br>
+                <label for="password">Senha</label>
+                <input type="password" id="password">
+                <button type="submit" id="btn" onclick="validarLogin(event)">Entrar</button>
+                <p class="errorMessage" id="errorMessage"></p>
+            </form>
+        </div>
+        <p class="footers">Desenvolvido por Rodolfo Melo, vulgo rodolfidas ©2025</p>
+    </main>
+</body>
+<script src="main.js"></script>
+</html>
